@@ -1853,6 +1853,10 @@ USART&lt;p&gt;
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="-116.84" y1="116.84" x2="-116.84" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-116.84" y1="81.28" x2="-104.14" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-116.84" y="134.62"/>
+<label x="-116.84" y="134.62" size="1.778" layer="95" xref="yes"/>
+<junction x="-104.14" y="81.28"/>
+<label x="-104.14" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
