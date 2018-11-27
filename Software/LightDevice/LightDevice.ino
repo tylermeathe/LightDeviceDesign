@@ -9,18 +9,18 @@ int operating_mode = 0;
 int button_state = 0;
 int previous_button_state = 0;
 int PWM_OUT = 0;
-int lag_time = 0;
+
+unsigned long PrevTime = 0;
+unsigned long lag_time = 0;
 int lag_delay = 250;
 
 bool BUTTON_PUSHED = false;
 
 // executed one-time at device startup
 void setup() {
+   attachInterrupt(digitalPinToInterrupt(BUTTON_IN), button_pushed, FALLING);
+ // define output (PWM) pin connected to LED
   pinMode(LED_OUT, OUTPUT);
-  pinMode(BUTTON_IN, INPUT);
-  attachInterrupt(BUTTON_IN, button_pushed, FALLING);
-  // define output (PWM) pin connected to LED
-
 }
 
 // continually-running loop
@@ -30,6 +30,8 @@ void loop() {
 
   set_pwm_based_on_operating_mode();
 
+  shine_led();
+
 }
 
 void set_pwm_based_on_operating_mode() {
@@ -37,18 +39,19 @@ void set_pwm_based_on_operating_mode() {
   switch (operating_mode) {
     case 0:
       PWM_OUT = 0;
-      shine_led();
+      break;
     case 1:
       PWM_OUT = PWM_MAX;
-      shine_led();
+      break;
     case 2:
       PWM_OUT = int(PWM_MAX / 2);
-      shine_led();
+      break;
     case 3:
       PWM_OUT = int(PWM_MAX / 4);
-      shine_led();
+      break;
     case 4:
-      flash_the_light();
+    flash_the_light();
+      break;
   }
 
 }
@@ -58,12 +61,15 @@ void button_pushed() {
 }
 
 void flash_the_light() {
-  PWM_OUT = PWM_MAX;
-  shine_led();
-  delay(500);
-  PWM_OUT = 0;
-  shine_led();
-  delay(500);
+  unsigned long CurrentTime = millis();
+  if(CurrentTime - PrevTime >= 500){
+    PrevTime = CurrentTime;
+    if (PWM_OUT == 0){
+      PWM_OUT=PWM_MAX;
+    }else{
+      PWM_OUT=0;
+    }
+  }
 }
 
 void shine_led() {
