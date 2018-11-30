@@ -1785,13 +1785,13 @@ USART&lt;p&gt;
 <attribute name="NAME" x="-85.344" y="134.62" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="-82.296" y="134.62" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="G1" gate="G$1" x="-152.4" y="134.62" rot="R90">
-<attribute name="NAME" x="-155.575" y="128.905" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="-147.32" y="128.905" size="1.778" layer="96" rot="R90"/>
+<instance part="G1" gate="G$1" x="-213.36" y="134.62" rot="R90">
+<attribute name="NAME" x="-216.535" y="128.905" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-208.28" y="128.905" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IC1" gate="A1" x="-116.84" y="142.24">
-<attribute name="NAME" x="-124.46" y="147.955" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-124.46" y="145.415" size="1.778" layer="96"/>
+<instance part="IC1" gate="A1" x="-177.8" y="142.24">
+<attribute name="NAME" x="-185.42" y="147.955" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-185.42" y="145.415" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="-30.48" y="63.5" rot="R90">
 <attribute name="NAME" x="-32.004" y="63.5" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -1816,12 +1816,12 @@ USART&lt;p&gt;
 <net name="9V" class="0">
 <segment>
 <pinref part="G1" gate="G$1" pin="+"/>
-<wire x1="-152.4" y1="147.32" x2="-152.4" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-213.36" y1="147.32" x2="-213.36" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A1" pin="VI"/>
-<wire x1="-152.4" y1="152.4" x2="-127" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="-127" y1="152.4" x2="-127" y2="142.24" width="0.1524" layer="91"/>
-<junction x="-127" y="142.24"/>
-<label x="-127" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="-213.36" y1="152.4" x2="-187.96" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-187.96" y1="152.4" x2="-187.96" y2="142.24" width="0.1524" layer="91"/>
+<junction x="-187.96" y="142.24"/>
+<label x="-187.96" y="142.24" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1833,8 +1833,8 @@ USART&lt;p&gt;
 <net name="5V" class="0">
 <segment>
 <pinref part="IC1" gate="A1" pin="VO"/>
-<junction x="-106.68" y="142.24"/>
-<label x="-106.68" y="142.24" size="1.778" layer="95" xref="yes"/>
+<junction x="-167.64" y="142.24"/>
+<label x="-167.64" y="142.24" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="S"/>
@@ -1855,18 +1855,18 @@ USART&lt;p&gt;
 <net name="GND" class="0">
 <segment>
 <pinref part="G1" gate="G$1" pin="-"/>
-<wire x1="-152.4" y1="121.92" x2="-152.4" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="116.84" x2="-116.84" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-213.36" y1="121.92" x2="-213.36" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-213.36" y1="116.84" x2="-177.8" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A1" pin="GND"/>
-<wire x1="-116.84" y1="116.84" x2="-116.84" y2="134.62" width="0.1524" layer="91"/>
-<junction x="-116.84" y="116.84"/>
-<junction x="-116.84" y="116.84"/>
-<label x="-116.84" y="116.84" size="1.778" layer="95" rot="R270" xref="yes"/>
+<wire x1="-177.8" y1="116.84" x2="-177.8" y2="134.62" width="0.1524" layer="91"/>
+<junction x="-177.8" y="116.84"/>
+<junction x="-177.8" y="116.84"/>
+<label x="-177.8" y="116.84" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
-<wire x1="-116.84" y1="116.84" x2="-116.84" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="81.28" x2="-104.14" y2="81.28" width="0.1524" layer="91"/>
-<junction x="-116.84" y="134.62"/>
-<label x="-116.84" y="134.62" size="1.778" layer="95" xref="yes"/>
+<wire x1="-177.8" y1="116.84" x2="-177.8" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="81.28" x2="-104.14" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-177.8" y="134.62"/>
+<label x="-177.8" y="134.62" size="1.778" layer="95" xref="yes"/>
 <junction x="-104.14" y="81.28"/>
 <label x="-104.14" y="81.28" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>

@@ -1892,10 +1892,11 @@ USART&lt;p&gt;
 <pinref part="S1" gate="G$1" pin="P"/>
 <junction x="-83.82" y="139.7"/>
 <wire x1="-83.82" y1="139.7" x2="-40.64" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="(PCI16/RXD)PD0"/>
-<wire x1="-40.64" y1="139.7" x2="-40.64" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="86.36" x2="-48.26" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="139.7" x2="-40.64" y2="83.82" width="0.1524" layer="91"/>
 <label x="-78.74" y="139.7" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="(PCI18/INT0)PD2"/>
+<wire x1="-48.26" y1="81.28" x2="-43.18" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="81.28" x2="-40.64" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM" class="0">
